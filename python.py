@@ -1,4 +1,4 @@
-import boto3
+import boto3, os
 
 more = None
 args = dict(Path=os.environ.get('SSM_PATH'), WithDecryption=True)
