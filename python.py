@@ -1,6 +1,6 @@
 import boto3
 
-more = Nil
+more = None
 args = dict(Path=os.environ.get('SSM_PATH'), WithDecryption=True)
 ssm = boto3.client('ssm')
 parameters = []
