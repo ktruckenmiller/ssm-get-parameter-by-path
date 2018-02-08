@@ -4,7 +4,7 @@ more = nil
 args = dict(Path=os.environ.get('SSM_PATH'), WithDecryption=True)
 ssm = boto3.client('ssm')
 parameters = []
-while more != false:
+while more != False:
     if more:
         args["NextToken"] = more        
     res = ssm.get_parameters_by_path(
